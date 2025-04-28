@@ -79,6 +79,23 @@ main p {
     color: #555;
     font-size: clamp(1rem, 2.5vw, 1.1rem); /* Responsive font size */
 }
+/* images */
+.war{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.key{
+    max-width: 100%;
+    height: auto;
+    display: block;   
+}
+.pic1{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* Footer */
 footer {

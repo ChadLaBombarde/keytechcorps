@@ -25,6 +25,70 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 0 1rem;
 }
+/*BANNER*/
+.banner {
+            margin: 0;
+            background: #000;
+            position: relative;
+            width: 100%;
+            height: 120px; /* Fixed height for banner */
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Positioning the canvas for matrix effect */
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styling the text container */
+        .text-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling the banner text */
+        #banner-text {
+            color: #00ff00;
+            font-size: calc(20px + 1vw); /* Slightly smaller font for banner */
+            font-weight: bold;
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: fadeInOut 3s infinite;
+            word-wrap: break-word;
+            max-width: 100%;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            #banner-text {
+                font-size: calc(16px + 1vw);
+                letter-spacing: 1px;
+            }
+            .banner {
+                height: 80px; /* Smaller height for mobile */
+            }
+        }
+
+        /* Fade animation for text */
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
 
 /* Navbar */
 nav {

@@ -19,7 +19,7 @@ const navLinks = document.querySelectorAll('nav ul li a');
         resizeCanvas();
 
         // Defining characters for matrix effect
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>?';
+        const chars = 'KEYTECHCORPS@#$%^&*()_+-=[]{}|;:,.<>?';
         const fontSize = 12; // Smaller font for banner
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
